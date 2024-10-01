@@ -1,8 +1,8 @@
 pipeline {
     environment {
-        dockerimagename = "ramann123/myimage"
+        dockerimagename = "charlesprakash/openshiftjenkins"
         registryCredential = 'dockerhublogin'  // Jenkins credential ID for DockerHub
-        namespace = 'raman' // OpenShift namespace
+        namespace = 'charles' // OpenShift namespace
         yamlFile = 'openshiftdeploymentfile.yaml' // Path to your YAML file
     }
 

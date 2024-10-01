@@ -50,7 +50,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    podman build -t ${dockerimagename} -f ./Dockerfile .
+                    podman build -t ${dockerimagename} -f ./dockerfile .
                     '''
                 }
             }
